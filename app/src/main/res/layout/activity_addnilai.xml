@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="@color/grayTransparent"
+	android:gravity="center_horizontal">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="320dp"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:background="@color/dove_gray">
+		<TextView
+			android:id="@+id/juduladdmateri"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			app:hintTextAppearance="@style/TextInputLayoutStyle">
+			
+			<EditText
+				android:id="@+id/addjudultext"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/line_bottom_gray"
+				android:hint="Nilai"
+				android:inputType="number"
+				android:paddingBottom="10dp"
+				android:paddingTop="10dp"
+				android:textColor="@color/dark_gray"
+				android:textCursorDrawable="@drawable/cursor_gray"
+				android:textSize="16sp" />
+		</android.support.design.widget.TextInputLayout>
+		<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			app:hintTextAppearance="@style/TextInputLayoutStyle">
+			
+			<EditText
+				android:id="@+id/deskripsitext"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/line_bottom_gray"
+				android:hint="Keterangan"
+				android:inputType="textMultiLine"
+				android:paddingBottom="10dp"
+				android:paddingTop="10dp"
+				android:textColor="@color/dark_gray"
+				android:textCursorDrawable="@drawable/cursor_gray"
+				android:textSize="16sp" />
+		</android.support.design.widget.TextInputLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="40dp">
+			<ProgressBar
+				android:id="@+id/progressnya"
+				android:layout_width="0dp"
+				android:layout_weight=".5"
+				android:layout_height="wrap_content"
+				android:visibility="gone" />
+			<Button
+				android:id="@+id/btnsimpannilai"
+				android:layout_width="0dp"
+				android:layout_weight=".5"
+				android:layout_height="40dp"
+				android:text="Simpan"
+				android:background="@color/colorPrimary"/>
+			<Button
+				android:id="@+id/btnbatalnilai"
+				android:layout_width="0dp"
+				android:layout_weight=".5"
+				android:layout_height="40dp"
+				android:background="@color/orange"
+				android:text="Batal"/>
+		</LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

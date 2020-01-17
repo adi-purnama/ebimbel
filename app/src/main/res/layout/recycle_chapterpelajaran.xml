@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:paddingBottom="10dp"
+	android:background="@drawable/bayangan">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		tools:ignore="UselessParent"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp">
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_weight=".8">
+			<ImageView
+				android:layout_width="50dp"
+				android:layout_height="50dp"
+				android:src="@drawable/ic_flash"
+				android:contentDescription="@string/app_name" />
+			<TextView
+				android:layout_width="10dp"
+				android:layout_height="match_parent" />
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_weight=".8"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+			<TextView
+				android:id="@+id/textjudul"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="18sp"/>
+			<TextView
+				android:id="@+id/textdeskripsi"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="12sp"
+				android:visibility="invisible"
+				android:autoLink="web"
+				android:linksClickable="true"
+				android:textColorLink="@color/black"/>
+				<TextView
+					android:id="@+id/textukuranfile"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:textSize="12sp"
+					android:visibility="invisible"
+					android:paddingTop="10dp"
+					android:textColor="@color/dark_gray"/>
+			</LinearLayout>
+		</LinearLayout>
+		
+		<Button
+			android:id="@+id/cmddownloadchapter"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@android:drawable/ic_menu_save"
+			android:backgroundTint="@color/black"
+			android:textColor="@color/black" />
+		
+		<Button
+			android:id="@+id/cmduploadchapter"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@android:drawable/ic_menu_upload"
+			android:backgroundTint="@color/black"
+			android:textColor="@color/black"
+			android:visibility="gone"/>
+		
+		<Button
+			android:id="@+id/cmdnilaichapter"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@android:drawable/btn_star_big_off"
+			android:backgroundTint="@color/black"
+			android:textColor="@color/white"
+			android:visibility="gone"/>
+		
+		<Button
+			android:id="@+id/cmdeditchapter"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@android:drawable/ic_menu_edit"
+			android:backgroundTint="@color/black"
+			android:textColor="@color/white" />
+		
+		<Button
+			android:id="@+id/cmdhapuschapter"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:background="@android:drawable/ic_menu_delete"
+			android:backgroundTint="@color/black"
+			android:textColor="@color/white" />
+	</LinearLayout>
+</LinearLayout>

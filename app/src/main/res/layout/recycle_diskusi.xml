@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:padding="4dp">
+	<TextView
+		android:id="@+id/chatleft"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight=".2"/>
+	
+	<LinearLayout
+		android:id="@+id/layoutchats"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight=".7"
+		android:background="@drawable/bayangan"
+		android:orientation="vertical"
+		android:paddingBottom="4dp">
+		
+		<TextView
+			android:id="@+id/textjudul"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="2dp"
+			android:padding="4dp"
+			android:textSize="12sp"
+			android:textStyle="bold"/>
+		
+		<TextView
+			android:id="@+id/textchat"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:layout_marginEnd="10dp"
+			android:textSize="16sp"
+			android:paddingBottom="5dp"/>
+		
+		<TextView
+			android:id="@+id/textjam"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="2dp"
+			android:padding="4dp"
+			android:textAlignment="textEnd"
+			android:textSize="12sp"/>
+	</LinearLayout>
+	<TextView
+		android:id="@+id/chatrigth"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight=".2"/>
+</LinearLayout>

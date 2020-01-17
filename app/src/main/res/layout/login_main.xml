@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <EditText
+                android:id="@+id/useredittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_bottom_gray"
+                android:hint="User Name"
+                android:inputType="text"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/dark_gray"
+                android:textCursorDrawable="@drawable/cursor_gray"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/TextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <EditText
+                android:id="@+id/passedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line_bottom_gray"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/dark_gray"
+                android:textCursorDrawable="@drawable/cursor_gray"
+                android:textSize="16sp" />
+        </android.support.design.widget.TextInputLayout>
+        <RelativeLayout
+            android:id="@+id/button_login"
+            android:layout_weight=".7"
+            android:background="@color/colorPrimary"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:text="Login"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/button_daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:paddingTop="20dp"
+                android:text="Belum Punya Akun? Daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/progressnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

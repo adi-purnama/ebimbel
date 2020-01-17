@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:background="@color/colorPrimary"
+		android:paddingTop="3dp"
+		android:paddingBottom="3dp">
+		<TextView
+			android:id="@+id/textjudul"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight=".9"
+			android:textSize="20sp"
+			android:textColor="@color/white"
+			android:layout_marginStart="10dp"/>
+		
+		<Button
+			android:id="@+id/btntambahchapter"
+			android:layout_width="40dp"
+			android:layout_height="40dp"
+			android:background="@android:drawable/ic_menu_add"
+			android:backgroundTint="@color/white" />
+	</LinearLayout>
+	<android.support.v7.widget.RecyclerView
+		android:layout_marginTop="5dp"
+		android:id="@+id/recycler_chapter"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+</LinearLayout>

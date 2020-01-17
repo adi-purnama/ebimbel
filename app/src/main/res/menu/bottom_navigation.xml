@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/kandang_tab"
+        android:title="@string/mata_pelajaran"
+        android:icon="@drawable/ic_school"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/graf_tab"
+        android:icon="@drawable/ic_latihan"
+        android:title="@string/latihan"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/tugas_tab"
+        android:icon="@drawable/ic_buku"
+        android:title="@string/result"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/inbox_tab"
+        android:title="@string/diskusi"
+        android:icon="@drawable/ic_diskusi"
+        app:showAsAction="always" />
+</menu>

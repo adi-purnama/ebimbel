@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Elearning Bimbel</string>
+	<string name="performa">Performa</string>
+	<string name="kandang">Kandang</string>
+	<string name="pesan">Pesan</string>
+	<string name="profil">Profil</string>
+	<string name="home">Home</string>
+	<string name="mata_pelajaran">Materi</string>
+	<string name="latihan">Latihan</string>
+	<string name="tugas">Upload</string>
+	<string name="diskusi">Diskusi</string>
+	<string name="result">Jawaban</string>
+</resources>
